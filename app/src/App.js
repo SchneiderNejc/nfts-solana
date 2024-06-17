@@ -9,6 +9,7 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const App = () => {
 	// Check if wallet is connected
 	const checkIfWalletIsConnected = async() => {
+		try{
 			// Solana object is injected if Phantom wallet is installed.
 			const {solana} = window;
 			if (solana) {
@@ -21,6 +22,10 @@ const App = () => {
 				} else {
 					console.log("Please install Phantom wallet.");
 				}
+			}
+		} catch (error) {
+			console.error(error);
+		}
 	};
 	return (
 		<div className="App">
