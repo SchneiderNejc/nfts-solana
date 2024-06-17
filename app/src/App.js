@@ -31,6 +31,9 @@ const App = () => {
 		const onLoad = async() => {
 			await checkIfWalletIsConnected();
 		}
+		// When the page is closed, the event listener is removed.
+		window.addEventListener('load', onLoad);
+		return () => window.removeEventListener('load', onLoad);
 	}, []);
 	return (
 		<div className="App">
