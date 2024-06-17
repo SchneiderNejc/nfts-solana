@@ -7,6 +7,9 @@ const TWITTER_HANDLE = "_buildspace";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
+	// Check if wallet is connected
+	const checkIfWalletIsConnected = async() => {
+	};
 	return (
 		<div className="App">
 			<div className="container">
