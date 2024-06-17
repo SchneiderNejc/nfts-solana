@@ -28,6 +28,9 @@ const App = () => {
 		}
 	};
 	useEffect(() => { 
+		const onLoad = async() => {
+			await checkIfWalletIsConnected();
+		}
 	}, []);
 	return (
 		<div className="App">
