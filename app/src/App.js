@@ -27,6 +27,8 @@ const App = () => {
 			console.error(error);
 		}
 	};
+	useEffect(() => { 
+	}, []);
 	return (
 		<div className="App">
 			<div className="container">
