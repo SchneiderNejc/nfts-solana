@@ -16,6 +16,8 @@ const App = () => {
 					console.log("Phantom wallet found!");
 					// Check if we're authorized to user's wallet.
 					const response = await solana.connect({ onlyIfTrused: true, }); // If user already connected to the website this property will be true.
+					console.log("Connected with Public Key",
+						response.publicKey.toString())
 				} else {
 					console.log("Please install Phantom wallet.");
 				}
