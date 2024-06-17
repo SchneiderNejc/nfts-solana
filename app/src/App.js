@@ -12,6 +12,8 @@ const App = () => {
 			// Solana object is injected if Phantom wallet is installed.
 			const {solana} = window;
 			if (solana) {
+				if (solana.isPhantom){
+					console.log("Phantom wallet found!");
 				} else {
 					console.log("Please install Phantom wallet.");
 				}
