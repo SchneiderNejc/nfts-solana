@@ -41,6 +41,7 @@ const App = () => {
 				'Connected with Public Key: ', 
 				response.publicKey.toString()
 			);
+			setWalletAddress(response.publicKey.toString());
 		}
 	}
 
