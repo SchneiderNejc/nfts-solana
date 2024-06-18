@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import twitterLogo from "./assets/twitter-logo.svg";
 
@@ -7,6 +7,7 @@ const TWITTER_HANDLE = "_buildspace";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
+	const [walletAddress, setWalletAddress] = useState(null);
 	// Check if wallet is connected
 	const checkIfWalletIsConnected = async() => {
 		try{
