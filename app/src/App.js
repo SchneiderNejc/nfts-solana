@@ -20,6 +20,7 @@ const App = () => {
 					const response = await solana.connect({ onlyIfTrused: true, }); // If user already connected to the website this property will be true.
 					console.log("Connected with Public Key",
 						response.publicKey.toString())
+					setWalletAddress(response.publicKey.toString());
 				} else {
 					console.log("Please install Phantom wallet.");
 				}
