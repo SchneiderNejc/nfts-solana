@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import twitterLogo from "./assets/twitter-logo.svg";
+import { mplCandyMachine } from '@metaplex-foundation/mpl-candy-machine';
+umi.use(mplCandyMachine());
 
 // Constants
 const TWITTER_HANDLE = "_buildspace";
