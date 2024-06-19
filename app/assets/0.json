@@ -1,0 +1,17 @@
+{
+    "name": "NAME_OF_NFT",
+    "symbol": "",
+    "image": "0.png", // Has to be a png format.
+    "properties": {
+        "files": [{
+            "url": "0.png",
+            "type": "image/png"
+        }],
+        // If there are multiple creators, it should be multiple addresses
+        // with a split share that adds up to a 100.
+        "creators:" [{
+            "address": "INSERT_YOUR_WALLET_ADDRESS",
+            "share": 100
+        }]
+    }
+}
