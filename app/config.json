@@ -1,0 +1,18 @@
+{
+    "price": 0.1, // How much each nft costs in SOL 
+    "number": 3, // How many nfts to mint - has to match w amount of nfts in assets folder
+    "gatekeeper": null,
+    "solTreasuryAccount": "BxGxS21BMYPEPhpTUsApthYLSvgjT3nHBCGM2PsAp3g1", // Owner wallet address. If nfts are sold, money will be deposited here.
+    "splTokenAccount": null,
+    "splToken": null,
+    "goLiveDate": "05 Jan 2021 00:00:00 GMT", // When the nft minting will start - Can be in the past
+    "endSettings": null,
+    "whitelistMintSettings": null,
+    "hiddenSettings": null,
+    "storage": "arweave", // Service to store metadata and images.
+    "ipfsInfuraProjectId": null,
+    "ipfsInfuraSecret": null,
+    "awsS3Bucket": null,
+    "noRetainAuthority": false,
+    "noMutable": false
+}
