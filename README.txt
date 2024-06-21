@@ -36,3 +36,21 @@ UMI INSTALLATION
 
 npm install @metaplex-foundation/umi
 npm install @metaplex-foundation/umi-bundle-defaults \
+
+
+
+---------- -------------------- ----------
+
+-nft is a json file that has metadata attached to it.
+-Remember, the NFTs start at 0 (e.g. 0.png, 0.json), and then go up by one for each extra NFT you want to create
+
+solana-keygen new --outfile ~/.config/solana/devnet.json
+-generate keypair
+
+solana config set --keypair ~/.config/solana/devnet.json
+-set as default keypair
+
+solana balance --url devnet
+-check balance
+
+solana airdrop 2 --url devnet
